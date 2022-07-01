@@ -1,0 +1,28 @@
+package aplicacao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import dominio.user;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		user p1 = new user(null ,"dashcommerce", "chooseMe");
+		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
+		EntityManager em = emf.createEntityManager();
+		
+		em.getTransaction().begin();
+		em.persist(p1);
+		em.getTransaction().commit();
+		
+		System.out.println("Pronto");
+		
+		em.close();
+		emf.close();
+	}
+
+}

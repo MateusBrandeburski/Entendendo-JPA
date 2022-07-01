@@ -10,15 +10,13 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		user p1 = new user(null ,"dashcommerce", "chooseMe");
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
 		EntityManager em = emf.createEntityManager();
 		
-		em.getTransaction().begin();
-		em.persist(p1);
-		em.getTransaction().commit();
+		user p1 = em.find(user.class, 1);
 		
+		System.out.println(p1);
 		System.out.println("Pronto");
 		
 		em.close();
