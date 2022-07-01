@@ -1,0 +1,23 @@
+INDEX VERSION 1.131+C:\Projetos\ws-sts\web_service-simples\.metadata\.plugins\org.eclipse.jdt.core
+3939678366.index
+2523000173.index
+1419380454.index
+3126052993.index
+315832078.index
+2628732773.index
+2853840215.index
+2224600458.index
+17123164.index
+2717818103.index
+1865797976.index
+3203752709.index
+4118627951.index
+3564485414.index
+1928545719.index
+3682651760.index
+2032502165.index
+2775733117.index
+1221156284.index
+2950880358.index
+67628801.index
+1066046729.index
